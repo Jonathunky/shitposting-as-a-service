@@ -78,6 +78,5 @@
     "overrides": {
       "react-virtual>react": "18.2.0"
     }
-  },
-  "packageManager": "yarn@3.6.1"
+  }
 }

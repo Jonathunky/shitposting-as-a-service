@@ -68,6 +68,7 @@ module.exports = () => {
     images: {
       domains: ['picsum.photos'],
     },
+    distDir: 'out',
     async headers() {
       return [
         {
