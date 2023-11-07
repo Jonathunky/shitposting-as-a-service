@@ -7,7 +7,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' https://static.cloudflareinsights.com;
+  script-src 'self' https://static.cloudflareinsights.com https://identity.netlify.com https://unpkg.com/ 'unsafe-eval';
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src *.s3.amazonaws.com;
