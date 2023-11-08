@@ -3,13 +3,13 @@ const siteMetadata = {
   title: 'Shitposting as a service',
   author: 'Jonathunky',
   headerTitle: 'work buy consume die',
-  description: 'Shitposting as a service',
+  description: 'NULL',
   language: 'en-gb',
   theme: 'system', // system, dark or light
   siteUrl: 'https://jonathan.world',
   siteRepo: 'https://github.com/Jonathunky/shitposting-as-a-service',
-  siteLogo: '/static/images/logo.png',
-  socialBanner: '/static/images/twitter-card.png',
+  siteLogo: '/icon/favicon.png',
+  socialBanner: '/images/twitter-card.png', //TODO fix!
   //mastodon: 'https://mastodon.social/@mastodonuser',
   //email: 'address@yoursite.com',
   github: 'https://github.com/Jonathunky',

@@ -1,10 +1,10 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Shitposting as a service",
+  "short_name": "Blog of Jonathunky",
   "icons": [
     {
-      "src": "/android-chrome-96x96.png",
-      "sizes": "96x96",
+      "src": "/icon.png",
+      "sizes": "240x240",
       "type": "image/png"
     }
   ],
