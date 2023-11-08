@@ -8,7 +8,7 @@ site_url: https://jonathan.world
 collections:
   - name: 'default'
     label: 'Pages'
-    folder: '_data/blog' # The path to the folder where the documents are stored
+    folder: 'data/blog' # The path to the folder where the documents are stored
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
