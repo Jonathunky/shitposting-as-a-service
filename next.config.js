@@ -7,30 +7,30 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' https://static.cloudflareinsights.com https://identity.netlify.com https://unpkg.com/ 'unsafe-eval';
+  script-src 'self' https://static.cloudflareinsights.com https://identity.netlify.com https://unpkg.com/ 'unsafe-eval' 'unsafe-inline' http://localhost:4001;
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src *.s3.amazonaws.com;
-  connect-src 'self' https://cloudflareinsights.com/cdn-cgi/rum;
+  connect-src 'self' https://cloudflareinsights.com/cdn-cgi/rum ws://localhost:4001/admin/;
   font-src 'self';
 `
 
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
-  {
+  /* {
     key: 'Content-Security-Policy',
     value: ContentSecurityPolicy.replace(/\n/g, ''),
-  },
+  },*/
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
   {
     key: 'Referrer-Policy',
     value: 'strict-origin-when-cross-origin',
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
-  {
+  /*{
     key: 'X-Frame-Options',
     value: 'DENY',
-  },
+  },*/
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
   {
     key: 'X-Content-Type-Options',

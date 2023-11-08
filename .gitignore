@@ -32,6 +32,7 @@ public/sitemap.xml
 # misc
 .DS_Store
 /.vscode
+.env
 
 # debug
 *.log
@@ -47,3 +48,5 @@ yarn-error.log*
 
 # Contentlayer
 .contentlayer
+
+node_modules
