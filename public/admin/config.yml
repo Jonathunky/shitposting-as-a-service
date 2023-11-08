@@ -1,21 +1,17 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-media_folder: public/img
-public_folder: img
+media_folder: public/static/images
+public_folder: static/images
 publish_mode: editorial_workflow
 site_url: https://jonathan.world
 collections:
   - name: 'default'
     label: 'Pages'
-    folder: 'data/blog' # The path to the folder where the documents are stored
+    folder: '_data/blog' # The path to the folder where the documents are stored
+    create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: 'Cats'
-        name: 'cats'
-        widget: list
-        fields:
-          - { label: 'Name', name: 'name', widget: 'string' }
-          - { label: 'Description', name: 'description', widget: 'text' }
