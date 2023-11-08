@@ -1,19 +1,15 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/images/google.png',
-    href: 'https://www.google.com',
+    title: 'FineWoven Empire',
+    description: `What if you could look up information about any modern iPhone accessory made by Apple? Well now you can!`,
+    imgSrc: '/images/everycase.jpg',
+    href: 'https://everycase.org',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'rembg-trainer',
+    description: `A script to train U2Net models specifically for background removal.`,
+    imgSrc: '/images/rembg.jpg',
+    href: 'https://github.com/Jonathunky/rembg-trainer',
   },
 ]
 
